@@ -97,7 +97,8 @@ trait Elements
                 $navComponentObject,
                 $this->arParams['PAGER_TITLE'],
                 $this->arParams['PAGER_TEMPLATE'],
-                ($this->arParams['PAGER_SHOW_ALWAYS'] === 'Y' ? true : false)
+                ($this->arParams['PAGER_SHOW_ALWAYS'] === 'Y' ? true : false),
+                $this
             );
             $this->arResult['NAV_CACHED_DATA'] = $navComponentObject->GetTemplateCachedData();
             $this->arResult['NAV_RESULT'] = $result;
